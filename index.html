@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>上海菡为智能科技有限公司</title>
+  <link href="css/style.css" type="text/css" rel="stylesheet" />
+  <script src="js/TouchSlide.1.1.js" type="text/javascript"></script>
+  <script src="js/jq.mobi.min.js" type="text/javascript"></script>
+  <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+  <script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+  <script type="text/javascript" src="js/navSlide.js"></script>
+  <script type="text/javascript" src="js/jquery.downCount.js"></script>
+  <script src="js/jquery.fullPage.min.js"></script>
+  <link rel="stylesheet" href="css/jquery.fullPage.css" />
+  <style>
+            .fp-tableCell {
+                float: left;
+                /*overflow-y: auto;*/
+                height: 100%;
+                width: 100%;
+                overflow:hidden;
+            }
+
+        </style>
+ </head>
+ <body style="outline: none;">
+  <div class="top_box" id="pc_top">
+   <div class="w_1200">
+    <div class="c_0100_2">
+     <div class="logo" style="color: white;font-size: 17px;line-height: 54px;">
+      上海菡为智能科技有限公司
+     </div>
+     <div class="l_menu">
+      <div class="menu pc_menu" id="navSlide">
+       <ul id="z_menu">
+        <li class="nli active" data-menuanchor="page1" _i="1"> <span><a href="#page1" target="_self">首页</a></span></li>
+        <li class="nli" data-menuanchor="page2" _i="2"> <span><a href="#page2" target="_self">业务</a></span> </li>
+        <li class="nli" data-menuanchor="page4" _i="6"> <span><a href="#page3" target="_self">关于</a></span> </li>
+        <li class="nli" data-menuanchor="page5" _i="7"> <span><a href="#page4" target="_self">联系</a></span> </li>
+       </ul>
+      </div>
+      <script>
+                                                var nli = $('.pc_menu .nli');
+                                                $(nli).hover(function () {
+                                                    $(this).children('.sub').stop().slideDown(300);
+                                                }, function () {
+                                                    $(this).children('.sub').slideUp(300);
+                                                })
+                                                //jQuery(".menu").slide({ type: "menu", titCell: ".nli", targetCell: ".sub", effect: "slideDown", delayTime: 300, triggerTime: 0, defaultPlay: false, returnDefault: true });
+                                            </script>
+     </div>
+    </div>
+   </div>
+   <div class="navbg"></div>
+  </div>
+  <script type="text/javascript">
+                             var sUserAgent = navigator.userAgent.toLowerCase();
+                             var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+                             var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+                             var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+                             var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+                             var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+                             var bIsAndroid = sUserAgent.match(/android/i) == "android";
+                             var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+                             var bIsWM = sUserAgent.match(/windows phone/i) == "windows phone";
+
+                             if (bIsIphoneOs || bIsAndroid || bIsCE || bIsWM) {
+                                 $(function () {
+                                     $('#dock_index').hide();
+                                     $('#dock_ny').hide();
+                                 })
+                             } else {
+                                 $(function () {
+                                     $('#dock_index').show();
+                                     $('#dock_ny').hide();
+                                 })
+                                 $(function () {
+                                     $(window).resize(function () { leftnav(); });
+                                     $(window).scroll(function () { leftnav(); });
+                                 });
+                                 function leftnav() {
+                                     if ($(window).scrollTop() > 72) {
+
+                                         $('.top_box').css('position', 'fixed');
+                                         $('.navbg').css('height', '72px');
+
+                                     } else {
+                                         $('.top_box').css('position', 'absolute');
+                                         $('.navbg').css('height', '0');
+                                     }
+
+
+                                 }
+                                 $('.pc_menu .nli').click(function () {
+
+                                     var _i = $(this).attr('_i');
+                                     if (_i > 1) {
+                                         $('.top_box').css('position', 'fixed');
+                                         $('.navbg').css('height', '72px');
+                                     }
+                                     if (_i == 1) {
+                                         $('.top_box').css('position', 'absolute');
+                                         $('.navbg').css('height', '0');
+                                     }
+
+                                 })
+                             }
+</script>
+  <div id="dowebok">
+   <div class="pz_main">
+    <!--page1-->
+    <div id="pz_m_1" class="w_0100 section">
+     <div class="w_0100 bg1">
+      <!--pcbanner开始-->
+      <div style="height:890px; position: relative; overflow:hidden;" class="banner_box_pc">
+       <div style="position: absolute; left: 50%; margin-left: -960px; top: 0;">
+        <!--head开始-->
+        <!--head结束-->
+        <div class="slides_box">
+         <div class="w_1200">
+          <div class="c_0100_1">
+           <div class="txtScroll-top" id="newslist1">
+            <div class="hd">
+             <a class="next"></a>
+             <a class="prev"></a>
+            </div>
+            <div class="bd">
+            </div>
+           </div>
+           <script type="text/javascript">
+                                            jQuery("#newslist1").slide({ titCell: ".hd ul", mainCell: ".bd ul", autoPage: true, effect: "topLoop", autoPlay: true, vis: 1, });
+										</script>
+          </div>
+         </div>
+        </div>
+        <div class="pz_slides_3">
+         <div class="_btn"></div>
+         <div class="_pic">
+          <ul>
+           <li><a href="javascript:void(0)" target="_blank"><img src="img/1.png" width="1920" height="890" /></a> <a href="javascript:void(0)" target="_blank">
+             <fieldset class="fiexd_box">
+              <legend align="center" class="fiexd_t_1">立足上海，智造全球！</legend>
+              <div class="fiexd_t_3"></div>
+              <div class="fiexd_t_4">
+               把工作交给机器，将思想留给自己。
+               <br />十年磨剑，专注提质、降本、增效。
+               <br />
+              </div>
+          </li>
+          </ul>
+         </div>
+        </div>
+        <script>
+                                var s_count = $(".pz_slides_3 ._pic img").length;
+                                var s_li = "";
+                                for (j = 1; j <= s_count; j++) { s_li += "<li></li>"; }
+                                $(".pz_slides_3 > ._btn").html("<ul>" + s_li + "</ul>");
+                                var btn = 1920 - $(".pz_slides_3 ._btn").width();
+                                var btnl = btn / 2;
+                                $(".pz_slides_3 ._btn").css("left", btnl + "px");
+                                jQuery(".pz_slides_3").slide({ titCell: "._btn li", mainCell: "._pic ul", effect: "fold", autoPlay: true, delayTime: 1500, interTime: 7000, mouseOverStop: false });
+                          </script>
+        <!--<div class="l_38">
+                          	<div class="w_1200">
+                            	<div class="img_38"><a href="#page2"><img src="/templates/cn/images/top_1.png" width="38" height="38"></a></div>
+                         	</div>
+                         </div>-->
+       </div>
+      </div>
+     </div>
+     <script>
+            $('.l_38 .w_1200 .img_38 a').click(function () {
+                $('.top_box').css('position', 'fixed');
+                $('.navbg').css('height', '72px');
+            })
+        </script>
+     <!--pcbanner结束-->
+     <!--phonebanner开始-->
+     <div class="w_0100 bg2">
+      <div id="slideBox" class="banner_box_phone">
+       <div class="bd">
+        <ul>
+         <li><a href="javascript:void(0)" class="pic" target="_blank"><img src="/upload/images/20160421/0122981692150379211596884.jpg" width="100%" /></a> <a href="javascript:void(0)" target="_blank">
+           <fieldset class="fiexd_box">
+            <legend align="center" class="fiexd_t_1">立足上海 泉释中国</legend>
+            <div class="fiexd_t_2">
+             With Headquarters in Shanghai
+             <br />
+             <span>Serving the Entire Country</span>
+            </div>
+            <div class="fiexd_t_3"></div>
+            <div class="fiexd_t_4">
+             扎根上海，心系全国，倾微薄之力保护祖国水资源。
+             <br />让碧水蓝天之梦不止于想！
+            </div>
+           </fieldset> </a> </li>
+        </ul>
+       </div>
+       <div class="hd">
+        <ul></ul>
+       </div>
+       <script type="text/javascript">
+                    TouchSlide({
+                        slideCell: "#slideBox",
+                        titCell: ".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+                        mainCell: ".bd ul",
+                        effect: "leftLoop",
+                        autoPage: true,//自动分页
+                        autoPlay: true, //自动播放
+                        delayTime: 1000,
+                        interTime: 3500
+                    });
+                    var btn = $('.banner_box_phone').width() - $(".banner_box_phone .hd").width();
+                    var btnl = btn / 2;
+                    $(".banner_box_phone .hd").css("right", btnl + "px");
+                </script>
+      </div>
+      <!--head开始-->
+      <div class="top_box">
+       <div class="c_0100_2">
+        <div class="logo">
+         <a href="/"><img src="/templates/cn/images/logo.png" width="100%" /></a>
+        </div>
+        <div class="small_menu">
+         <a href="javascript:;" onclick="$('.pf_phone_menu,.cha').show(200);$('zhezhao').show();"><img src="/templates/cn/images/menu_img1.png" width="36" height="36" /></a>
+         <!--<a class="cha" href="javascript:;" onclick="$('.pf_phone_menu,.cha').hide(200);"><img src="/templates/cn/images/menu_img2.png" width="36" height="36"></a>-->
+        </div>
+       </div>
+      </div>
+      <!--head结束-->
+      <!--	<div class="l_38">
+                        <div class="img_38"><a href="#page2"><img src="/templates/cn/images/top_1.png" width="38" height="38"></a></div>
+                    </div>-->
+      <div class="slides_box">
+       <div class="c_0100_1">
+        <div class="txtScroll-top" id="newslist2">
+         <div class="hd">
+          <a class="next"></a>
+          <a class="prev"></a>
+         </div>
+         <div class="bd">
+         </div>
+        </div>
+       </div>
+       <script type="text/javascript">
+                                            jQuery("#newslist2").slide({ titCell: ".hd ul", mainCell: ".bd ul", autoPage: true, effect: "topLoop", autoPlay: true, vis: 1 });
+										</script>
+      </div>
+     </div>
+    </div>
+    <!--phonebanner结束-->
+    <!--page2-->
+    <div id="pz_m_2" class="w_0100 bg_02 section" style="background:url(img/2.png) center top no-repeat;">
+     <div class="w_1200">
+      <div class="c_1200_4" id="page2_nr">
+       <div class="ftitle_3">
+        <div class="tit_china">
+         我们的业务
+        </div>
+        <div class="tit_eng">
+         What we can do
+        </div>
+       </div>
+       <!--我们的合作伙伴开始-->
+       <div class="d_0100_1 pc_hzhb">
+        <div class="slide_mservice_1" id="slide_mservice_1">
+         <div class="bd">
+          <ul>
+           <li style="background-color:white">
+            <div class="t_248">
+             <a href="/page.aspx?node=25&amp;f=cn">
+              <div class="z_tupian" style="height:64px; width:100%; position:relative;">
+               <img class="z_tupian1" src="/upload/images/20160219/main_26163099.png" width="66" height="64" />
+               <img class="z_tupian2" src="/upload/images/20160219/main_26163099.png" width="66" height="64" />
+              </div> <span>机器人本体的设计、制造<br /></span> </a>
+            </div>
+            <div class="d_248 z_title1">
+             <a href="/page.aspx?node=25&amp;f=cn">设计制造</a>
+            </div>
+            <div class="d_248 z_title2">
+             <a href="/page.aspx?node=25&amp;f=cn">设计与制造</a>
+            </div>
+          </li>
+          <li style="background-color:white">
+           <div class="t_248">
+            <a href="/page.aspx?node=25&amp;f=cn">
+             <div class="z_tupian" style="height:64px; width:100%; position:relative;">
+              <img class="z_tupian1" src="/upload/images/20160219/main_26163099.png" width="66" height="64" />
+              <img class="z_tupian2" src="/upload/images/20160219/main_26163099.png" width="66" height="64" />
+             </div> <span>工业4.0解决方案及实施<br /></span> </a>
+           </div>
+           <div class="d_248 z_title1">
+            <a href="/page.aspx?node=25&amp;f=cn">工业4.0</a>
+           </div>
+           <div class="d_248 z_title2">
+            <a href="/page.aspx?node=25&amp;f=cn">工业4.0</a>
+           </div>
+         </li>
+           <li style="background-color:white">
+            <div class="t_248">
+             <a href="/page.aspx?node=26&amp;f=cn">
+              <div class="z_tupian" style="height:64px; width:100%; position:relative;">
+               <img class="z_tupian1" src="/upload/images/20160219/main_31049450.png" width="66" height="64" />
+               <img class="z_tupian2" src="/upload/images/20160219/main_31049450.png" width="66" height="64" />
+              </div> <span>机器人技术推广及实施<br /></span> </a>
+            </div>
+            <div class="d_248 z_title1">
+             <a href="/page.aspx?node=26&amp;f=cn">推广实施</a>
+            </div>
+            <div class="d_248 z_title2">
+             <a href="/page.aspx?node=26&amp;f=cn">推广实施</a>
+            </div> </li>
+           <li style="background-color:white">
+            <div class="t_248">
+             <a href="/page.aspx?node=27&amp;f=cn">
+              <div class="z_tupian" style="height:64px; width:100%; position:relative;">
+               <img class="z_tupian1" src="/upload/images/20160219/main_48122231.png" width="66" height="64" />
+               <img class="z_tupian2" src="/upload/images/20160219/main_48122231.png" width="66" height="64" />
+              </div> <span>机械人系统维修及整改，二手机器人回收<br /></span> </a>
+            </div>
+            <div class="d_248 z_title1">
+             <a href="/page.aspx?node=27&amp;f=cn">维修整改</a>
+            </div>
+            <div class="d_248 z_title2">
+             <a href="/page.aspx?node=27&amp;f=cn">维修整改</a>
+            </div> </li>
+          </ul>
+         </div>
+        </div>
+       </div>
+       <script>
+                        $('.pc_hzhb li').each(function () {
+
+                            $(this).hover(function () {
+
+                                $('.z_tupian1', this).stop().animate({ 'right': '-167px' }, 400);
+                                $('.z_tupian2', this).stop().animate({ 'left': '91px' }, 400);
+                                $('.z_title1', this).stop().animate({ 'left': '-248px' }, 400);
+                                $('.z_title2', this).stop().animate({ 'right': '0' }, 400);
+                            }, function () {
+                                $('.z_tupian1', this).stop().animate({ 'right': '91px' }, 400);
+                                $('.z_tupian2', this).stop().animate({ 'left': '-66px' }, 400);
+                                $('.z_title1', this).stop().animate({ 'left': '0' }, 400);
+                                $('.z_title2', this).stop().animate({ 'right': '-248px' }, 400);
+                            })
+                        })
+
+                    </script>
+       <!--手机开始-->
+       <div class="ft_1200_6 phone_hzhb">
+        <div id="picScroll_1" class="picScroll_1">
+         <div class="bd">
+          <ul>
+           <li>
+            <div class="t_248">
+             <a href="/page.aspx?node=25&amp;f=cn"> <img src="/upload/images/20160219/main_26163099.png" width="66" height="64" /><br /> <span>针对化工、医药、印染、电子、<br />市政等行业的水循环利用</span> </a>
+            </div>
+            <div class="d_248">
+             <a href="/page.aspx?node=25&amp;f=cn">中水回用</a>
+            </div> </li>
+          </ul>
+          <ul>
+           <li>
+            <div class="t_248">
+             <a href="/page.aspx?node=26&amp;f=cn"> <img src="/upload/images/20160219/main_31049450.png" width="66" height="64" /><br /> <span>通过设计、咨询、工程、运营的一体化<br />服务实现工业高难废水的趋零排放</span> </a>
+            </div>
+            <div class="d_248">
+             <a href="/page.aspx?node=26&amp;f=cn">废水零排</a>
+            </div> </li>
+          </ul>
+          <ul>
+           <li>
+            <div class="t_248">
+             <a href="/page.aspx?node=27&amp;f=cn"> <img src="/upload/images/20160219/main_48122231.png" width="66" height="64" /><br /> <span>截污疏浚、底泥资源化利用、<br /> 黑臭水体的治理与修复</span> </a>
+            </div>
+            <div class="d_248">
+             <a href="/page.aspx?node=27&amp;f=cn">水体治理</a>
+            </div> </li>
+          </ul>
+          <ul>
+           <li>
+            <div class="t_248">
+             <a href="/page.aspx?node=28&amp;f=cn"> <img src="/upload/images/20161018/诺亚方舟网页示意图45831941.png" width="66" height="64" /><br /> <span>针对工业危废污泥深度减量<br /> 精心打造的创新方案</span> </a>
+            </div>
+            <div class="d_248">
+             <a href="/page.aspx?node=28&amp;f=cn">诺亚方舟</a>
+            </div> </li>
+          </ul>
+         </div>
+         <div class="hd">
+          <ul></ul>
+         </div>
+         <div class="lprev_1"></div>
+         <div class="rnext_1"></div>
+         <script type="text/javascript">
+
+                                jQuery("#picScroll_1").slide({ titCell: ".hd ul", mainCell: ".bd", autoPage: true, effect: "leftLoop", autoPlay: true, prevCell: ".rnext_1", nextCell: ".lprev_1", delayTime: 1000, interTime: 3500,mouseOverStop: false, vis: 1 });
+
+			</script>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+
+    <!--page6-->
+    <div class="w_0100 fc_0100_bg2 section" id="pz_m_6" style="background:url(/upload/images/20160316/0319606747337425.jpg) bottom center no-repeat;">
+     <div class="w_1200">
+      <div class="fc_1200_2" id="page6_nr">
+       <div class="ftitle_3">
+        <div class="tit_china">
+         我们是谁
+        </div>
+        <div class="tit_eng">
+         Who we are
+        </div>
+       </div>
+       <div class="ft_1200_3">
+        <script>
+                        function about(_id) {
+                            $('.ft_1200_3 .f_whoweare').hide();
+                            $('#about' + _id).stop().fadeIn(300);
+                            $('.pf_flower ._hover').removeClass('hover');
+                            $('#hover' + _id).addClass('hover');
+                        }
+                    </script>
+        <div class="pf_flower">
+         <div class="flower_line">
+          <div class="flower_one _hover hover" onmouseover="about(1)" id="hover1">
+           <a href="javascript:;">简介</a>
+          </div>
+          <div class="flower_two _hover" onmouseover="about(2)" id="hover2">
+           <a href="javascript:;">理念</a>
+          </div>
+         </div>
+         <div class="flower_line flower_line_m">
+          <div class="flower_three _hover" onmouseover="about(3)" id="hover3">
+           <a href="javascript:;">荣誉</a>
+          </div>
+          <div class="flower_four _hover" onmouseover="about(4)" id="hover4">
+           <a href="javascript:;">公益</a>
+          </div>
+         </div>
+        </div>
+        <div class="f_whoweare" id="about1">
+          上海菡为智能科技有限公司主要从事智能科技、机器人科技、机电一体化技术、
+         <br />数字化技术、机器学习领域内的技术开发、技术转让、技术咨询、技术服务及机电一体化产品的设计、开发、制作及销售。
+         <br />我们的技术团队具有多年机器人及智能制造行业从业经验。
+         <br />主要汇聚多年实战经验的机电一体化、自动化、信息技术专业硕士团队组成。
+         <br />
+        </div>
+        <div class="f_whoweare" id="about2" style="display:none;">
+          优势互补，各从所长
+         <br />推动水处理方式由传统固定式的水处理厂到新型撬装式的一体化水处理站的转变
+         <br />立泉不仅致力于解决问题，更以前瞻的思维引领市场需求
+        </div>
+        <div class="f_whoweare" id="about3" style="display:none;">
+         <p><span style="font-size: 18px;">青春活力，厚积薄发</span><br />立泉于2013年下半年成功入选上海市<br />“国家级海外高层次人才创新创业基地建设计划”节能环保优先推荐项目。</p>
+        </div>
+        <div class="f_whoweare" id="about4" style="display:none;">
+         <p>创业不忘初心，立泉环境公益基金支持环保同行的交流合作<br />关注生态环境的改善，关怀生活在污染地区的孩子们。<br /><a style="text-decoration: underline;" href="/list.aspx?node=21&amp;f=cn">&gt;&gt;更多</a></p>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <!--page7-->
+    <div class="pz_down b section" style="background:url(img/5.png) bottom center no-repeat;">
+     <div class="w_0100 fc_0100_bg1 " id="pz_m_7">
+      <div class="w_1200">
+       <div class="fc_1200_1" id="page7_nr">
+        <div class="ftitle_1">
+         <div class="tit_china">
+          联系我们
+         </div>
+         <div class="tit_eng">
+          Contact us
+         </div>
+        </div>
+        <div class="ft_1200_1">
+         <div class="fl_515">
+          <div class="ftitle_2">
+           <div class="cen_2">
+            <b><img src="/templates/cn/images/down_img2.png" width="32" height="32" /></b>
+            <div class="tit_2">
+             联系我们
+            </div>
+           </div>
+          </div>
+          <div class="fd_515">
+           <p><span class="span_1">电话:</span> <span class="span_2">18136193386</span></p>
+           <p><span class="span_1">地址:</span> 嘉定区真南路4268号蓝天经济城</p>
+           <p><span class="span_1">邮箱:</span> <strong>yusb@shhanwei.cn</strong></p>
+          </div>
+         </div>
+         <div class="fl_475">
+          <div class="ftitle_2">
+           <div class="cen_2">
+            <b><img src="/templates/cn/images/down_img3.png" width="32" height="32" /></b>
+            <div class="tit_2">
+             加入我们
+            </div>
+           </div>
+          </div>
+          <div class="fd_475">
+           <div class="ft_475_1">
+            我们提供了联合创业、实现价值的平台，
+            <br />有无数机会等着您，欢迎加入！
+           </div>
+           <div class="ft_475_2">
+            <a href="zhaopin.html" target="_blank"><img width="134" height="35" src="/templates/cn/images/down_img4.jpg" /></a>
+           </div>
+          </div>
+         </div>
+         <div class="fl_210">
+          <div class="ftitle_2">
+           <div class="cen_2">
+            <b><img src="/templates/cn/images/down_img5.png" width="32" height="32" /></b>
+            <div class="tit_2">
+             关注我们
+            </div>
+           </div>
+          </div>
+          <div class="fd_210">
+           <div class="ft_210_1">
+            您还可以通过以下方式与我们取得联系
+           </div>
+           <div class="ft_210_2">
+            <div class="fweixin_box">
+             <div class="wei_block">
+              <a href="http://weibo.com/p/1006065778123815/home?from=page_100606&amp;mod=TAB&amp;is_all=1#place" class="a_wei abw_1"></a>
+             </div>
+             <div class="wei_block">
+              <a href="#" class="a_wei abw_2" style="position: relative;">
+               <div class="pf_wei">
+                <img src="/upload/images/2016-03-30/6359495390914750602572306.png" height="105" width="105" />
+               </div> </a>
+             </div>
+             <div class="wei_block">
+              <a href="" class="a_wei abw_3"></a>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="ft_1200_2">
+         <div class="fd_1200_1">
+          <div class="l_copy">
+           Copyright &copy; 2016-2018 上海立泉环境科技有限公司. All rights reserved&nbsp;沪ICP备15058150号
+           <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1258886717'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/stat.php%3Fid%3D1258886717%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+          </div>
+          <div class="r_wei">
+           <div class="fweixin_box">
+            <div class="wei_block">
+             <a href="http://weibo.com/p/1006065778123815/home?from=page_100606&amp;mod=TAB&amp;is_all=1#place" target="_blank" class="a_wei abw_1"></a>
+            </div>
+            <div class="wei_block">
+             <a class="a_wei abw_2" id="z_wx" style="position: relative;">
+              <div class="pf_wei" id="pf_wei_2">
+               <img src="/upload/images/2016-03-30/6359495390914750602572306.png" height="105" width="105" />
+              </div> </a>
+            </div>
+            <div class="wei_block">
+             <a href="" target="_self" class="a_wei abw_3"></a>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <script>
+            if ($(window).width() < 768) {
+                $("#z_wx").click(function () {
+                    var x = document.getElementById("pf_wei_2");
+                    if (x.style.display == "none") {
+                        $("#pf_wei_2").show();
+
+                    }
+                    else {
+                        $("#pf_wei_2").hide();
+
+                    }
+                })
+            }
+</script>
+  </div>
+  <div class="pf_phone_menu" id="navSlide1" style="display:none;">
+   <div class="w_1000">
+    <div class="phone_menu menu">
+     <ul>
+      <li class="nli"><span><a href="/" target="_self" class="l1_a">首页</a></span></li>
+      <li class="nli"><span><a href="/#page2" target="_self" class="l1_a">业务</a></span> </li>
+      <li class="nli"><span><a href="/#page4" target="_self" class="l1_a">关于</a></span> </li>
+      <li class="nli"><span><a href="/#page5" target="_self" class="l1_a">联系</a></span> </li>
+     </ul>
+     <script>
+          	    //jQuery(".menu").slide({ type: "menu", titCell: ".nli", targetCell: ".sub", effect: "slideDown", delayTime: 300, triggerTime: 0, defaultPlay: false, returnDefault: true });
+            </script>
+    </div>
+   </div>
+  </div>
+  <script>
+    $('.pf_phone_menu li a').each(function () {
+        $(this).click(function () {
+            $('#navSlide1').hide();
+        })
+    })
+
+</script>
+  <script>
+ // 屏幕自适应
+    $(function () {
+
+        $(window).resize(function () { pingmu(); });
+        $(window).scroll(function () { pingmu(); });
+        function pingmu() {
+            var winheight = $(window).height();
+
+            var page1_nrheight = $('.fiexd_box').eq(0).height();
+            var page2_nrheight = $('#page2_nr').height();
+            var page3_nrheight = $('#page3_nr').height();
+            var page4_nrheight = $('#page4_nr').height();
+            var page5_nrheight = $('#page5_nr').height();
+            var page6_nrheight = $('#page6_nr').height();
+            var page7_nrheight = $('#page7_nr').height();
+          //  alert(page4_nrheight);
+            var page1_top = (winheight - page1_nrheight) / 2;
+            var page2_top = (winheight - page2_nrheight) / 2;
+            var page3_top = (winheight - page3_nrheight) / 2;
+            var page4_top = (winheight - page4_nrheight) / 2;
+            var page5_top = (winheight - page5_nrheight) / 2;
+            var page6_top = (winheight - page6_nrheight) / 2;
+            var page7_top = (winheight - page7_nrheight) / 2;
+
+            if ($(window).width() > 480) {
+                if (page1_top < 72) { page1_top = 72; }
+                if (page2_top < 72) { page2_top = 72; }
+                if (page3_top < 72) { page3_top = 72; }
+                if (page4_top < 72) { page4_top = 72; }
+                if (page5_top < 72) { page5_top = 72; }
+                if (page6_top < 72) { page6_top = 72; }
+                if (page7_top < 72) { page7_top = 72; }
+            }
+
+
+
+
+            if (winheight < 770 && $(window).width() > 720) {
+                $('.fiexd_box').css('top', page1_top + 180 + 'px');
+                $('.slides_box').css('top', page1_top + page1_nrheight + 50 + 'px');
+              //  $('.l_38').css('top', page1_top + page1_nrheight + 96 + 'px');
+            } else {
+                //$('.fiexd_box').css('top', '50%');
+                //$('.slides_box').css('top', '624px');
+                //$('.l_38').css('top', '680px');
+            }
+
+            $('#page2_nr').css('padding-top', page2_top + 'px');
+            $('#page3_nr').css('padding-top', page3_top + 'px');
+            $('#page4_nr').css('padding-top', page4_top + 'px');
+            $('#page5_nr').css('padding-top', page5_top + 'px');
+            $('#page6_nr').css('padding-top', page6_top + 'px');
+            $('#page7_nr').css('padding-top', page7_top + 'px');
+
+
+        }
+        window.onload = pingmu;
+        //setTimeout(function () {
+        //    pingmu()
+        //}, 6000);
+
+    });
+
+
+    $(window).scroll(function () {
+            if ($(window).scrollTop() > 72) {
+
+
+                $('#pc_top').css('position', 'fixed');
+                $('.navbg').css('height', '72px');
+
+            } else {
+                $('#pc_top').css('position', 'absolute');
+                $('.navbg').css('height', '0');
+            }
+
+        });
+    $(function () {
+        _href = location.href;
+        if (_href.split('#')[1].length > 0) {
+            if (_href.split('#')[1] == 'page1') {
+                $('.top_box').css('position', 'absolute');
+                $('.navbg').css('height', '0');
+            } else {
+                $('#pc_top').css('position', 'fixed');
+                $('.navbg').css('height', '72px');
+
+            }
+        }
+
+    })
+
+</script>
+  <script>
+            var ary = location.href;
+            if (ary.split('#')[1] ==null) {
+                location.href = "#page1";
+            }
+            $(function () {
+                $('#dowebok').fullpage({
+                    //sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90'],
+                    anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7'],
+                    menu: '#z_menu',
+                    onLeave: function (index, nextIndex, direction) {
+                        if (nextIndex > 1) {
+                           // alert('11');
+                            $('#pc_top').css('position', 'fixed');
+                            $('.navbg').css('height', '72px');
+
+                        } else {
+
+                            $('.top_box').css('position', 'absolute');
+                            $('.navbg').css('height', '0');
+                        }
+                        $("#text").val(nextIndex);
+                }
+                });
+            });
+
+            $(function () {
+                $('#ny_down').hide();
+            })
+            $(function () {
+                NewAutoSize();
+                $(window).resize(function () {
+                    NewAutoSize();
+
+                });
+            });
+            var NewAutoSize = function () {
+                var $ww = $(window).width();
+                var $hh = $(window).height();
+                if ($ww <= 1024 || $hh <= 600) {
+                   // $.fn.fullpage.setAutoScrolling(false);
+
+                } else {
+                }
+            }
+        </script>
+  <div class="pz_down" id="ny_down">
+   <div class="w_0100 fc_0100_bg6">
+    <div class="w_1200">
+     <div class="fc_1200_9">
+      <div class="fd_1200_1">
+       <div class="l_copy">
+        版权信息
+        <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1258886717'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/stat.php%3Fid%3D1258886717%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+       </div>
+       <div class="r_wei_2">
+        <div class="fweixin_box">
+         <div class="wei_block">
+          <a href="http://weibo.com/p/1006065778123815/home?from=page_100606&amp;mod=TAB&amp;is_all=1#place" target="_blank" class="a_wei abw_1"></a>
+         </div>
+         <div class="wei_block">
+          <a href="javascript:;" class="a_wei abw_2" style="position: relative;">
+           <div class="pf_wei_2">
+            <img src="/upload/images/2016-03-30/6359495390914750602572306.png" height="105" width="105" />
+           </div> </a>
+         </div>
+         <div class="wei_block">
+          <a href="" target="_self" class="a_wei abw_3"></a>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <zhezhao onclick="$('.pf_phone_menu,.cha').hide(200);$('zhezhao').hide();"></zhezhao>
+  <div class="dock_ny" style="height: 160px;position: fixed;right: 10px;bottom: 85px;width: 160px;z-index: 200;" id="dock_ny">
+  </div>
+  <script>
+    $('.dock_ny .up').hover(function () {
+        $(this).addClass('active');
+    }, function () {
+        $(this).removeClass('active');
+    })
+    $('.dock_ny .tel').hover(function () {
+        $(this).addClass('active');
+    }, function () {
+        $(this).removeClass('active');
+    })
+    $('.dock_ny .im').hover(function () {
+        $(this).addClass('active');
+    }, function () {
+        $(this).removeClass('active');
+    })
+
+    $('.dock_ny .wechat').hover(function () {
+        $(this).addClass('active');
+    }, function () {
+        $(this).removeClass('active');
+    })
+    $(".dock_ny .up").click(function () {
+        var speed = 200;//滑动的速度
+        $('body,html').animate({ scrollTop: 0 }, speed);
+        return false;
+    });
+    //$('.dock_ny .up').click(function () {
+    //    $(window).scrollTop(0, 50000);
+
+
+    //})
+</script>
+ </body>
+</html>

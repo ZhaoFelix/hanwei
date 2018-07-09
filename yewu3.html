@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>上海菡为智能科技有限公司</title>
+  <link href="css/style.css" type="text/css" rel="stylesheet" />
+  <script src="js/TouchSlide.1.1.js" type="text/javascript"></script>
+  <script src="js/jq.mobi.min.js" type="text/javascript"></script>
+  <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+  <script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+  <script type="text/javascript" src="js/navSlide.js"></script>
+  <script type="text/javascript" src="js/jquery.downCount.js"></script>
+ </head>
+ <body style="outline: none;">
+  <div class="dock" style="height: 296px; top: 210.5px; display:none;" id="dock_index">
+   <a class="switch"></a>
+  </div>
+  <input type="hidden" id="text" value="1" />
+  <script type="text/javascript">
+    $(function () {
+        $("#xia").click(function () {
+            var c = $("#text").val();
+
+            if (c <= 6) {
+                c = c * 1 + 1;
+                $("#text").val(c);
+                var z = $("#text").val();
+                if (z > 1) {
+                    $('.top_box').css('position', 'fixed');
+                    $('.navbg').css('height', '72px');
+                }
+                if (z == 1) {
+                    $('.top_box').css('position', 'absolute');
+                    $('.navbg').css('height', '0');
+                }
+                location.href = '/#page' + z;
+            }
+        });
+
+    });
+    $(function () {
+        $("#shang").click(function () {
+            var c = $("#text").val();
+            if (c <= 7 & c > 1) {
+                c = c * 1 - 1;
+                $("#text").val(c);
+                if ($("#text").val() > 1) {
+                    $('.top_box').css('position', 'fixed');
+                    $('.navbg').css('height', '72px');
+                }
+                if ($("#text").val() == 1) {
+                    $('.top_box').css('position', 'absolute');
+                    $('.navbg').css('height', '0');
+                }
+                location.href = '/#page' + $("#text").val();
+            }
+        });
+
+    });
+
+
+    $('.dock .im').hover(function () {
+        $(this).addClass('active');
+    }, function () {
+        $(this).removeClass('active');
+    })
+    $('.dock .tel').hover(function () {
+        $(this).addClass('active');
+    }, function () {
+        $(this).removeClass('active');
+    })
+    $('.dock .wechat').hover(function () {
+        $(this).addClass('active');
+    }, function () {
+        $(this).removeClass('active');
+    })
+    $('.dock .switch').click(function () {
+        if ($(this).parent('.dock').hasClass('close')) {
+            $(this).parent('.dock').removeClass('close');
+            $(this).removeClass('off');
+        } else {
+            $(this).parent('.dock').addClass('close');
+            $(this).addClass('off');
+        }
+
+    })
+
+
+</script>
+  <div class="pz_main">
+   <div id="pz_m_1" class="w_0100">
+    <div class="w_0100 bg1">
+     <!--pc_top开始-->
+     <div class="top_box">
+      <div class="w_1200">
+       <div class="c_0100_2">
+        <div class="logo" style="width:250px;margin-top:30px;">
+          <a href="index.html" style="color: white;font-size: 20px;">上海菡为智能科技有限公司</a>
+        </div>
+        <div class="chian" style="background:url(/templates/cn/images/shuxian.jpg) left 29px no-repeat;">
+         <a href="/page.aspx?node=29&amp;f=en#page1">en</a>
+        </div>
+        <div class="l_menu">
+         <div class="menu pc_menu" id="navSlide">
+
+         </div>
+
+        </div>
+       </div>
+      </div>
+     </div>
+     <!--pc_top结束-->
+     <!--pcbanner开始-->
+     <div style=" position: relative; overflow:hidden;" class="banner_box_pc" id="pcbanner">
+      <div style="position: absolute; left: 50%; margin-left: -960px; top: 0;">
+       <!--head开始-->
+       <div class="pz_slides_3" style="height:auto;">
+        <img src="img/te.jpg" />
+       </div>
+       <script>
+                             function banner() {
+                                 $('#pcbanner').css('height', $('.pz_slides_3 img').height());
+                             }
+                             window.onload = banner;
+
+                         </script>
+      </div>
+     </div>
+    </div>
+    <!--pcbanner结束-->
+    <!--phonebanner开始-->
+    <div class="w_0100 bg2">
+     <div id="slideBox" class="banner_box_phone">
+      <img src="/upload/images/20160413/业务phone1223657.jpg" width="100%" />
+     </div>
+     <div class="top_box">
+      <div class="c_0100_2">
+       <div class="logo">
+        <a href="/"><img src="/templates/cn/images/logo.png" width="100%" /></a>
+       </div>
+       <div class="small_menu">
+        <a href="javascript:;" onclick="$('.pf_phone_menu,.cha').show(200);$('zhezhao').show();"><img src="/templates/cn/images/menu_img1.png" width="36" height="36" /></a>
+        <!--<a class="cha" href="javascript:;" onclick="$('.pf_phone_menu,.cha').hide(200);"><img src="/templates/cn/images/menu_img2.png" width="36" height="36"></a>-->
+       </div>
+       <div class="chian">
+        <a href="/page.aspx?node=29&amp;f=en#page1">en</a>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <!--phonebanner结束-->
+   <div class=" w_0100">
+    <div class="w_1200">
+      <div class="fc_1200_6 pc_show">
+              <div class="pz_SideLayer">
+
+<li class="l1"><a href="yewu1.html" target="_self" id="left13">产品1</a></li>
+
+<li class="l1"><a href="yewu2.html" target="_self" id="left14">产品2</a></li>
+
+<li class="l1"><a href="yewu3.html" target="_self" id="left15">产品3</a></li>
+
+<li class="l1"><a href="yewu4.html" target="_self" id="left22">产品4</a></li>
+
+<li class="l1"><a href="yewu5.html" target="_self" id="left23">产品5</a></li>
+
+
+              </div>
+          </div>
+<script>
+$('#left15').addClass('hover');
+</script>
+
+     <div class="c_1200_5">
+
+      <p style="text-align: center;"><img src="img/y3.png" /></p>
+      <p style="text-align: center;"><img src="img/y3_1.png" /></p>
+      <p style="text-align: center;"><img src="img/y3_2.png" /></p>
+      <!-- <p style="text-align: left; line-height: normal;"><span style="margin: 0px; font-size: 14px;"><br />经过常规机械脱水之后的污泥，留存水份主要以表面水、间隙水和毛细水的形式存在，很难继续用机械力脱除。诺亚方舟干化设备利用除湿热泵系统，对湿污泥通过冷凝除湿、热风循环进行烘干，从而达到污泥深度减量的效果。除湿热泵是利用制冷系统使湿热空气降温脱湿，同时通过热泵回收空气水份凝结潜热并加热空气的一种装置。<br /><br /><br /></span><img style="width: 352px; height: 181px;" src="/upload/images/2016-10-18/image6042157.png" /><br /><br /><br /><span style="font-size: 14px;">诺亚方舟产品包括三个系列：</span><br /><br /><span style="margin: 0px; font-size: 14px;"><img src="/upload/images/2017-04-21/image3738581.png" /><br /><br />诺亚方舟的优势在于：<br /><br /></span></p>
+      <p style="text-align: left; line-height: normal; unicode-bidi: embed; direction: ltr;"><span style="color: black; font-family: 微软雅黑,Microsoft YaHei; font-size: 14px;">（1）设备运行在低温区，整机COP在2以上，整体节能效果明显；</span></p>
+      <p style="text-align: left; line-height: normal; unicode-bidi: embed; direction: ltr;"><span style="color: black; font-family: times new roman; font-size: 14px;">（</span><span style="font-family: times new roman; font-size: 14px;"><span style="color: black; font-family: 微软雅黑; font-size: 32px;"></span><span style="color: black; font-family: 微软雅黑; font-size: 14px;">2）采用电力完成干化过程，无需高温热源，减少了天然气燃烧炉、蒸汽锅炉等热源发生装置；</span></span></p>
+      <p style="text-align: left; line-height: normal; unicode-bidi: embed; direction: ltr;"><span style="color: black; font-family: times new roman; font-size: 14px;">（</span><span style="font-family: times new roman; font-size: 14px;"><span style="color: black; font-family: 微软雅黑; font-size: 32px;"></span><span style="color: black; font-family: 微软雅黑; font-size: 14px;">3）空气在设备内部循环，无需后续的除尘、除</span><span style="color: black; font-family: 微软雅黑; font-size: 14px;">VOC</span><span style="color: black; font-family: 微软雅黑; font-size: 14px;">等工艺设备；</span></span></p>
+      <p style="text-align: left; line-height: normal; unicode-bidi: embed; direction: ltr;"><span style="color: black; font-family: times new roman; font-size: 14px;">（</span><span style="font-family: times new roman; font-size: 14px;"><span style="color: black; font-family: 微软雅黑; font-size: 32px;"></span><span style="color: black; font-family: 微软雅黑; font-size: 14px;">4）单机设备，模块化组装模式，无需复杂的工程配备；</span></span></p>
+      <p style="text-align: left; line-height: normal; unicode-bidi: embed; direction: ltr;"><span style="color: black; font-family: times new roman; font-size: 14px;">（</span><span style="font-family: times new roman; font-size: 14px;"><span style="color: black; font-family: 微软雅黑; font-size: 32px;"></span><span style="color: black; font-family: 微软雅黑; font-size: 14px;">5）物料在网带上处于静态输送，接触面磨损消耗小；</span></span></p>
+      <p style="text-align: left; line-height: normal; unicode-bidi: embed; direction: ltr;"><span style="color: black; font-family: times new roman; font-size: 14px;">（</span><span style="font-family: times new roman; font-size: 14px;"><span style="color: black; font-family: 微软雅黑; font-size: 32px;"></span><span style="color: black; font-family: 微软雅黑; font-size: 14px;">6）设备内部应用工况条件温和，零部件使用寿命长；</span></span></p>
+      <p style="text-align: left; line-height: normal; unicode-bidi: embed; direction: ltr;"><span style="color: black; font-family: times new roman; font-size: 14px;">（</span><span style="font-family: times new roman; font-size: 14px;"><span style="color: black; font-family: 微软雅黑; font-size: 32px;"></span><span style="color: black; font-family: 微软雅黑; font-size: 14px;">7）设备启停方便，操作灵活；</span></span></p>
+      <p style="text-align: left;"><span style="margin: 0px; font-size: 14px;"><br /><br />立泉诺亚方舟干化设备性价比高，既大大减少了危废污泥的委外处理量和对环境的压力，同时可为企业每年节约百万元委外处理费用，帮助节约环保成本的同时提升企业的绿色形象。</span><span style="margin: 0px; font-size: 12px;"><br /><br /><img title="诺亚方舟表格修改20161207.png" src="/upload/images/2017-04-21/6362839255633700006007057.png" /><br /><br /></span></p>
+      <p style=";text-align:left;direction:ltr;unicode-bidi:embed"><span style="margin: 0px; font-size: 14px;">与其他污泥减量设备对比</span><span style="font-size: 14px;">，诺亚方舟具有以下优势：</span></p>
+      <p style="text-align: left;"><span style="margin: 0px; font-size: 12px;"><br /><img src="/upload/images/2017-04-21/image3808034.png" /><br /><br /><br /><span style="margin: 0px; font-size: 14px;">与市场同类产品对比，诺亚方舟具有以下优势：</span><br /><br /><img src="/upload/images/2017-04-21/image6057135.png" /><br /><br /><br /><br /><br /></span><br /></p> -->
+     </div>
+    </div>
+   </div>
+  </div>
+
+  <div class="pz_down" id="ny_down">
+   <div class="w_0100 fc_0100_bg6">
+    <div class="w_1200">
+     <div class="fc_1200_9">
+      <div class="fd_1200_1">
+       <div class="l_copy">
+        Copyright &copy; 2016-2018 上海立泉环境科技有限公司. All rights reserved&nbsp;沪ICP备15058150号
+        <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1258886717'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/stat.php%3Fid%3D1258886717%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+       </div>
+       <div class="r_wei_2">
+        <div class="fweixin_box">
+         <div class="wei_block">
+          <a href="http://weibo.com/p/1006065778123815/home?from=page_100606&amp;mod=TAB&amp;is_all=1#place" target="_blank" class="a_wei abw_1"></a>
+         </div>
+         <div class="wei_block">
+          <a href="javascript:;" class="a_wei abw_2" style="position: relative;">
+           <div class="pf_wei_2">
+            <img src="/upload/images/2016-03-30/6359495390914750602572306.png" height="105" width="105" />
+           </div> </a>
+         </div>
+         <div class="wei_block">
+          <a href="" target="_self" class="a_wei abw_3"></a>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <zhezhao onclick="$('.pf_phone_menu,.cha').hide(200);$('zhezhao').hide();"></zhezhao>
+  <div class="dock_ny" style="height: 160px;position: fixed;right: 10px;bottom: 85px;width: 160px;z-index: 200;" id="dock_ny">
+
+  </div>
+
+ </body>
+</html>
