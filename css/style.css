@@ -540,8 +540,8 @@ transform-style: preserve-3d;
 .fweixin_box .wei_block .a_wei{ float:left; width:24px; height:24px;}
 .fweixin_box .wei_block .a_wei.abw_1{ background:url(images/down_img6.png) no-repeat;}
 .fweixin_box .wei_block .a_wei:hover.abw_1{ background:url(images/down_img6_h.png) no-repeat;}
-.fweixin_box .wei_block .a_wei.abw_2{ background:url(images/down_img7.png) no-repeat;}
-.fweixin_box .wei_block .a_wei:hover.abw_2{ background:url(images/down_img7_h.png) no-repeat;}
+.fweixin_box .wei_block .a_wei.abw_2{ background:url(../img/down_img7.png) no-repeat;}
+.fweixin_box .wei_block .a_wei:hover.abw_2{ background:url(../img/down_img7.png) no-repeat;}
 .fweixin_box .wei_block .a_wei .pf_wei{ display:none; position:absolute; width:115px; height:131px; padding:20px 5px 0 5px; background:url(images/down_img10.png) no-repeat; left:-44px; top:24px;}
 .fweixin_box .wei_block .a_wei:hover .pf_wei{ display: block;}
 .fweixin_box .wei_block .a_wei.abw_3{ background:url(images/down_img8.png) no-repeat;}
