@@ -37,8 +37,8 @@
        <ul id="z_menu">
         <li class="nli active" data-menuanchor="page1" _i="1"> <span><a href="#page1" target="_self">首页</a></span></li>
         <li class="nli" data-menuanchor="page2" _i="2"> <span><a href="#page2" target="_self">业务</a></span> </li>
-        <li class="nli" data-menuanchor="page4" _i="6"> <span><a href="#page3" target="_self">关于</a></span> </li>
-        <li class="nli" data-menuanchor="page5" _i="7"> <span><a href="#page4" target="_self">联系</a></span> </li>
+        <li class="nli" data-menuanchor="page3" _i="6"> <span><a href="#page3" target="_self">关于</a></span> </li>
+        <li class="nli" data-menuanchor="page4" _i="7"> <span><a href="#page4" target="_self">联系</a></span> </li>
        </ul>
       </div>
       <script>
@@ -53,60 +53,8 @@
      </div>
     </div>
    </div>
-   <div class="navbg"></div>
+   <div class="navbg" style="height:72px;"></div>
   </div>
-  <script type="text/javascript">
-                             var sUserAgent = navigator.userAgent.toLowerCase();
-                             var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
-                             var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
-                             var bIsMidp = sUserAgent.match(/midp/i) == "midp";
-                             var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
-                             var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
-                             var bIsAndroid = sUserAgent.match(/android/i) == "android";
-                             var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
-                             var bIsWM = sUserAgent.match(/windows phone/i) == "windows phone";
-
-                             if (bIsIphoneOs || bIsAndroid || bIsCE || bIsWM) {
-                                 $(function () {
-                                     $('#dock_index').hide();
-                                     $('#dock_ny').hide();
-                                 })
-                             } else {
-                                 $(function () {
-                                     $('#dock_index').show();
-                                     $('#dock_ny').hide();
-                                 })
-                                 $(function () {
-                                     $(window).resize(function () { leftnav(); });
-                                     $(window).scroll(function () { leftnav(); });
-                                 });
-                                 function leftnav() {
-                                     if ($(window).scrollTop() > 72) {
-
-                                         $('.top_box').css('position', 'fixed');
-                                         $('.navbg').css('height', '72px');
-
-                                     } else {
-                                         $('.top_box').css('position', 'absolute');
-                                         $('.navbg').css('height', '0');
-                                     }
-
-
-                                 }
-                                 $('.pc_menu .nli').click(function () {
-
-                                     var _i = $(this).attr('_i');
-                                     if (_i > 1) {
-                                         $('.top_box').css('position', 'fixed');
-                                         $('.navbg').css('height', '72px');
-                                     }
-                                     if (_i == 1) {
-                                         $('.top_box').css('position', 'absolute');
-                                         $('.navbg').css('height', '0');
-                                     }
-
-                                 })
-                             }
 </script>
   <div id="dowebok">
    <div class="pz_main">
@@ -272,6 +220,7 @@
             <div class="t_248">
              <a href="yewu1.html">
               <div class="z_tupian" style="height:64px; width:100%; position:relative;">
+              <img class="z_tupian1" src="img/design.png" width="66" height="64" />
                <!-- <img class="z_tupian1" src="/upload/images/20160219/main_26163099.png" width="66" height="64" />
                <img class="z_tupian2" src="/upload/images/20160219/main_26163099.png" width="66" height="64" /> -->
               </div> <span>机器人本体的设计及制造<br /></span> </a>
@@ -280,13 +229,14 @@
              <a href="yewu1.html">设计制造</a>
             </div>
             <div class="d_248 z_title2">
-             <a href="yewu1.html">设计与制造</a>
+             <a href="yewu1.html" style="color:black">设计与制造</a>
             </div>
           </li>
           <li style="background-color:white">
            <div class="t_248">
             <a href="yewu6.html">
              <div class="z_tupian" style="height:64px; width:100%; position:relative;">
+            <img class="z_tupian1" src="img/scheme.png" width="66" height="64" />
               <!-- <img class="z_tupian1" src="/upload/images/20160219/main_26163099.png" width="66" height="64" />
               <img class="z_tupian2" src="/upload/images/20160219/main_26163099.png" width="66" height="64" /> -->
              </div> <span>工业4.0解决方案<br /></span> </a>
@@ -295,13 +245,14 @@
             <a href="yewu6.html">工业4.0</a>
            </div>
            <div class="d_248 z_title2">
-            <a href="yewu6.html">工业4.0</a>
+            <a href="yewu6.html" style="color:black">工业4.0</a>
            </div>
          </li>
            <li style="background-color:white">
             <div class="t_248">
              <a href="#">
               <div class="z_tupian" style="height:64px; width:100%; position:relative;">
+              <img class="z_tupian1" src="img/rebot.png" width="66" height="64" />
                <!-- <img class="z_tupian1" src="/upload/images/20160219/main_31049450.png" width="66" height="64" />
                <img class="z_tupian2" src="/upload/images/20160219/main_31049450.png" width="66" height="64" /> -->
               </div> <span>机器人技术推广及实施<br /></span> </a>
@@ -310,21 +261,21 @@
              <a href="#">推广实施</a>
             </div>
             <div class="d_248 z_title2">
-             <a href="#">推广实施</a>
+             <a href="#" style="color:black">推广实施</a>
             </div> </li>
            <li style="background-color:white">
             <div class="t_248">
              <a href="#">
               <div class="z_tupian" style="height:64px; width:100%; position:relative;">
-               <!-- <img class="z_tupian1" src="/upload/images/20160219/main_48122231.png" width="66" height="64" />
-               <img class="z_tupian2" src="/upload/images/20160219/main_48122231.png" width="66" height="64" /> -->
+               <img class="z_tupian1" src="img/recycle.png" width="66" height="64" />
+               <!-- <img class="z_tupian2" src="/upload/images/20160219/main_48122231.png" width="66" height="64" /> -->
               </div> <span>机械人系统维修及整改，二手机器人回收<br /></span> </a>
             </div>
             <div class="d_248 z_title1">
              <a href="#">维修整改</a>
             </div>
             <div class="d_248 z_title2">
-             <a href="#">维修整改</a>
+             <a href="#" style="color:black">维修整改</a>
             </div> </li>
           </ul>
          </div>
@@ -334,7 +285,6 @@
                         $('.pc_hzhb li').each(function () {
 
                             $(this).hover(function () {
-
                                 $('.z_tupian1', this).stop().animate({ 'right': '-167px' }, 400);
                                 $('.z_tupian2', this).stop().animate({ 'left': '91px' }, 400);
                                 $('.z_title1', this).stop().animate({ 'left': '-248px' }, 400);
@@ -352,33 +302,7 @@
        <div class="ft_1200_6 phone_hzhb">
         <div id="picScroll_1" class="picScroll_1">
          <div class="bd">
-          <!-- <ul>
-           <li>
-            <div class="t_248">
-             <a href="/page.aspx?node=25&amp;f=cn"> <img src="/upload/images/20160219/main_26163099.png" width="66" height="64" /><br /> <span>针对化工、医药、印染、电子、<br />市政等行业的水循环利用</span> </a>
-            </div>
-            <div class="d_248">
-             <a href="/page.aspx?node=25&amp;f=cn">中水回用</a>
-            </div> </li>
-          </ul>
-          <ul>
-           <li>
-            <div class="t_248">
-             <a href="/page.aspx?node=26&amp;f=cn"> <img src="/upload/images/20160219/main_31049450.png" width="66" height="64" /><br /> <span>通过设计、咨询、工程、运营的一体化<br />服务实现工业高难废水的趋零排放</span> </a>
-            </div>
-            <div class="d_248">
-             <a href="/page.aspx?node=26&amp;f=cn">废水零排</a>
-            </div> </li>
-          </ul>
-          <ul>
-           <li>
-            <div class="t_248">
-             <a href="/page.aspx?node=27&amp;f=cn"> <img src="/upload/images/20160219/main_48122231.png" width="66" height="64" /><br /> <span>截污疏浚、底泥资源化利用、<br /> 黑臭水体的治理与修复</span> </a>
-            </div>
-            <div class="d_248">
-             <a href="/page.aspx?node=27&amp;f=cn">水体治理</a>
-            </div> </li>
-          </ul> -->
+
           <ul>
            <li>
             <div class="t_248">
@@ -406,7 +330,7 @@
     </div>
 
     <!--page6-->
-    <div class="w_0100 fc_0100_bg2 section" id="pz_m_6" style="background:url(/upload/images/20160316/0319606747337425.jpg) bottom center no-repeat;">
+    <div class="w_0100 fc_0100_bg2 section" id="pz_m_6" style="background-color: whitesmoke;">
      <div class="w_1200">
       <div class="fc_1200_2" id="page6_nr">
        <div class="ftitle_3">
@@ -451,17 +375,7 @@
         主要汇聚多年实战经验的机电一体化、自动化、信息技术专业硕士团队组成。我们的企业使命是“把工作交给机器，将思想留给自己"!
          <br />
         </div>
-        <!-- <div class="f_whoweare" id="about2" style="display:none;">
-          优势互补，各从所长
-         <br />推动水处理方式由传统固定式的水处理厂到新型撬装式的一体化水处理站的转变
-         <br />立泉不仅致力于解决问题，更以前瞻的思维引领市场需求
-        </div>
-        <div class="f_whoweare" id="about3" style="display:none;">
-         <p><span style="font-size: 18px;">青春活力，厚积薄发</span><br />立泉于2013年下半年成功入选上海市<br />“国家级海外高层次人才创新创业基地建设计划”节能环保优先推荐项目。</p>
-        </div>
-        <div class="f_whoweare" id="about4" style="display:none;">
-         <p>创业不忘初心，立泉环境公益基金支持环保同行的交流合作<br />关注生态环境的改善，关怀生活在污染地区的孩子们。<br /><a style="text-decoration: underline;" href="/list.aspx?node=21&amp;f=cn">&gt;&gt;更多</a></p>
-        </div> -->
+
        </div>
       </div>
      </div>
@@ -611,7 +525,7 @@
     })
 
 </script>
-  <script>
+ <script>
  // 屏幕自适应
     $(function () {
 
@@ -685,7 +599,7 @@
 
             } else {
                 $('#pc_top').css('position', 'absolute');
-                $('.navbg').css('height', '0');
+                $('.navbg').css('height', '72px');
             }
 
         });
@@ -694,7 +608,7 @@
         if (_href.split('#')[1].length > 0) {
             if (_href.split('#')[1] == 'page1') {
                 $('.top_box').css('position', 'absolute');
-                $('.navbg').css('height', '0');
+                $('.navbg').css('height', '72px');
             } else {
                 $('#pc_top').css('position', 'fixed');
                 $('.navbg').css('height', '72px');
@@ -724,7 +638,7 @@
                         } else {
 
                             $('.top_box').css('position', 'absolute');
-                            $('.navbg').css('height', '0');
+                            $('.navbg').css('height', '72px');
                         }
                         $("#text").val(nextIndex);
                 }
